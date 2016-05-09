@@ -1,6 +1,6 @@
 {
   "name": "js-slave-file",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A slave who can manage file",
   "main": "main.js",
   "files": [
