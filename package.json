@@ -3,6 +3,9 @@
   "version": "0.0.3",
   "description": "A slave who can manage file",
   "main": "main.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
   "files": [
     "main.js"
   ],
