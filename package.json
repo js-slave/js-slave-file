@@ -1,0 +1,35 @@
+{
+  "name": "js-slave-file",
+  "version": "0.0.1",
+  "description": "A slave who can manage file",
+  "main": "main.js",
+  "files": [
+    "main.js"
+  ],
+  "keywords": [
+    "js-slave",
+    "js-slave-manager",
+    "js-slave-file",
+    "file"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/js-slave/js-slave-file.git"
+  },
+  "author": "lludol",
+  "license": {
+    "type": "GNU GPLv3",
+    "url": "http://www.gnu.org/copyleft/gpl.html"
+  },
+  "devDependencies": {
+    "eslint": "^2.9.0",
+    "eslint-config-js-slave": "0.0.1"
+  },
+  "dependencies": {
+    "charmeleon": "^0.1.0",
+    "js-slave-base": "0.0.1"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  }
+}
