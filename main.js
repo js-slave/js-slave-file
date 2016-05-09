@@ -3,7 +3,7 @@ const chokidar	= require('charmeleon');
 const fs		= require('fs');
 
 /**
- * Represent the category "File" for jsbot-manager.
+ * Represent the category "File" for js-slave-manager.
  */
 class JSSlaveFile extends JSSlave {
 	/**
@@ -49,11 +49,15 @@ class JSSlaveFile extends JSSlave {
 					actionPointer.start(actionParameters);
 				});
 				this.watcher.on('error', (error) => {
-					console.log(error);
+					throw new JSSlave.JSSlaveError(error.message);
 				});
 			}
 		} catch(e) {
-			throw new JSSlave.JSSlaveError(e.message);
+			if (e instanceof JSSlave.JSSlaveError) {
+				throw e;
+			} else {
+				throw new JSSlave.JSSlaveError(e.message);
+			}
 		}
 	}
 
