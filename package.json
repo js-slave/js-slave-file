@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "charmeleon": "^0.1.0",
-    "js-slave-base": "0.0.1"
+    "js-slave-base": "0.0.2"
   },
   "engines": {
     "node": ">=6.0.0"
