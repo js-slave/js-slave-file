@@ -23,3 +23,20 @@ name     | descripion                               | type
 -------- | ---------------------------------------- | ------
 filename | The name of the new created file         | String
 path     | The path where the file has been created | String
+
+#### fileModified
+
+Trigger when a file is modified
+
+###### Parameters
+
+name | descripion                                            | type
+---- | ----------------------------------------------------- | ------
+path | The path where we have to watch for new modified file | String
+
+###### Returned values
+
+name     | descripion                                | type
+-------- | ----------------------------------------- | ------
+filename | The name of the new modified file         | String
+path     | The path where the file has been modified | String
